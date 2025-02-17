@@ -3,6 +3,22 @@
     font-family: 'bellavoir';
     src: url(fonts/bellavoir.otf);
 }
+@font-face {
+    font-family: 'groteskb';
+    src: url(fonts/groteskbold.ttf);
+}
+@font-face {
+    font-family: 'groteskr';
+    src: url(fonts/groteskregular.ttf);
+}
+@font-face {
+    font-family: 'benedict';
+    src: url(fonts/benedict.otf);
+}
+@font-face {
+    font-family: 'benedictl';
+    src: url(fonts/benedictl.otf);
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -22,12 +38,13 @@ nav {
     justify-content: space-between;
     align-items: center;
     color: white;
+    font-family: 'benedict';
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 20px;
     padding: 0;
     margin: 0;
 }
@@ -35,12 +52,21 @@ nav ul {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 .logo{
     font-family: 'bellavoir';
     font-size: 40px;
+}
+
+.metallic-shadow {
+    font-size: 50px;
+    font-weight: bold;
+    color: #c0c0c0;
+    text-shadow: 2px 2px 2px #999, 
+                 4px 4px 4px #777, 
+                 6px 6px 6px #555;
 }
 
 
@@ -55,15 +81,18 @@ nav ul li a {
 }
 
 #home h1 {
-    font-family: 'bellavoir';
+    font-family: 'benedict';
     color: #333;
-    font-size: 48px;
-    margin-bottom: 10px;
+    font-size: 60px;
+    margin-bottom: 0px;
 }
 
 #home p {
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-family: 'benedict';
+    color: #555;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 0px;
 }
 
 #home a {
