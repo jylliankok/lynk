@@ -72,12 +72,21 @@ nav ul li a {
 
 /* Hero Section */
 #home {
-    background-image: url('media/charmbracelet.webp');
-    background-size: cover;
-    background-position: center;
+    display: flex;
     padding: 100px 20px;
     color: white;
     text-align: center;
+}
+
+.homeleft img {
+    width: 100%;  /* Make the image responsive */
+    max-width: 400px; /* Set a max width for the image */
+    height: auto;
+}
+
+.homeright {
+    flex: 1; /* Takes up remaining space */
+    text-align: left; /* Ensures text is aligned */
 }
 
 #home h1 {
