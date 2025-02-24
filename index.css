@@ -126,6 +126,7 @@ nav ul li a {
 #products {
     padding: 50px 20px;
     text-align: center;
+    background-color: rgba(153, 153, 153, 0.5)
 }
 
 #products h2 {
@@ -204,7 +205,8 @@ nav ul li a {
 #contact h2 {
     font-family: 'bellavoir';
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    word-spacing: 5px;
 }
 
 #contact p {
@@ -212,31 +214,8 @@ nav ul li a {
     color: #555;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    width: 100%;
-}
-
-.contact-form button {
-    background-color: gray;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    cursor: pointer;
+#contact img {
+    padding: 20px;
 }
 
 /* Footer */
@@ -271,12 +250,32 @@ footer {
         text-align: center;
     }
 
-    .homeleft img {
+    #home h1{
+        margin-top: 10px;
+    }
 
+    #home p {
+        font-size: 35px;
+    }
+    .homeleft img {
+        padding-top: 20px;
+        width: 80%;
+        padding-bottom: 0;
     }
 
     .homeright{
+        padding-top: 10px;
+    }
 
+    
+
+    footer {
+        display: flex;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 20px;
     }
 }
 
@@ -292,4 +291,21 @@ footer {
     color: #ff6347; /* Tomato red */
     transition: background-color 1.5s ease, color 1.5s ease, box-shadow 0.5s;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+a:empty {
+    display: none;
+}
+
+/* Initially hide sections */
+section {
+    opacity: 0; /* Make sections invisible at first */
+    transform: translateY(30px); /* Move them down slightly */
+    transition: opacity 0.5s ease-out, transform 5s ease-out;
+}
+
+/* Class added when section enters viewport */
+.section-visible {
+    opacity: 1;
+    transform: translateY(0); /* Bring it to normal position */
 }
