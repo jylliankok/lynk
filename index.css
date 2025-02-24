@@ -257,10 +257,26 @@ footer {
 
     .homeleft img {
         max-width: 550px; /* Allow the image to be slightly bigger */
+        padding-top: 0px;
     }
 
     .homeright {
         max-width: 650px;
+    }
+}
+
+@media (max-width: 768px) {
+    #home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .homeleft img {
+
+    }
+
+    .homeright{
+
     }
 }
 
