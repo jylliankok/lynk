@@ -39,6 +39,7 @@ nav {
     align-items: center;
     color: white;
     font-family: 'benedict';
+    margin-bottom: 0px;
 }
 
 nav ul {
@@ -62,38 +63,41 @@ nav ul li a {
 
 .metallic-shadow {
     font-size: 50px;
-    font-weight: bold;
+    font-weight: light;
     color: #c0c0c0;
     text-shadow: 2px 2px 2px #999, 
                  4px 4px 4px #777, 
-                 6px 6px 6px #555;
+                 6px 6px 6px #bdbdbd;
 }
 
 
 /* Hero Section */
 #home {
-    display: flex;
-    padding: 100px 20px;
-    color: white;
-    text-align: center;
+    display: flex;         
+    align-items: center;    
+    justify-content: center;
+    height: 100vh;                     
+    text-align: center;   
+    padding-top: 0px; 
 }
 
 .homeleft img {
-    width: 100%;  /* Make the image responsive */
-    max-width: 400px; /* Set a max width for the image */
+    width: 100%;          
+    max-width: 400px;     
     height: auto;
 }
 
 .homeright {
-    flex: 1; /* Takes up remaining space */
-    text-align: left; /* Ensures text is aligned */
+    flex: 1;              
+    max-width: 500px;    
 }
 
 #home h1 {
-    font-family: 'benedict';
-    color: #333;
-    font-size: 60px;
-    margin-bottom: 0px;
+    font-family: 'bellavoir';
+    color: #cfcfcf;
+    font-size: 75px;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
 }
 
 #home p {
@@ -114,6 +118,7 @@ nav ul li a {
     font-size: 18px;
     text-decoration: none;
 }
+
 
 /* Products Section */
 #products {
